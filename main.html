@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const myLink = document.querySelector(".ham");
+            myLink.addEventListener("click", () => {
+                console.log("You visited the link");
+                document.querySelector(".left").style.left = "0"
+            });
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const Link = document.querySelector(".close");
+            Link.addEventListener("click", () => {
+                console.log("You visited the link");
+                document.querySelector(".left").style.left = "-120%"
+            });
+        });
+    </script>
+    <div class="container">
+        <div class="left">
+            <img class="close invert" src="svg/close.svg" alt="" height="30px" width="30px">
+            <div class="box1-home m1">
+                <div class="symbol invert"><img src="svg/spotifylogo.svg" alt="" width="100px" height="30px"></div>
+                <ul>
+                    <li class="invert text"> <i class="fa-solid fa-house"></i>Home</li>
+                    <li class="invert text"><i class="fa-solid fa-magnifying-glass "></i>Search</li>
+                </ul>
+            </div>
+            <div class="box2-library m1 ">
+                <div class="library invert"><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                        class="Svg-sc-ytk21e-0 bneLcE " width="25px" height="25px">
+                        <path
+                            d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                        </path>
+                    </svg>
+                    <div class=" text">Your Library</div>
+                    <i class="fa-solid fa-plus plus"></i>
+                </div>
+                <div class="box2-part2">
+                    <div class="playlist ">
+                        <div>Create your first playlist</div>
+                        <div class="easy">It's easy, we'll help you</div>
+                        <button class="btn">Create playlist</button>
+                    </div>
+                    <div class="podcast">
+                        <div>Let's find some podcasts to follow</div>
+                        <div class="update">We'll keep you updated on new episodes</div>
+                        <button class="btn">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Safety & Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                </div>
+                <button class="btn1 invert"><i class="fa-solid fa-globe"></i>English</button>
+            </div>
+        </div>
+        <div class="right m1">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger">
+                        <img class="ham invert" src="svg/hamburger.svg" alt="" height="30px" width="30px">
+                        <i class="fa-solid fa-angle-left invert leftangle"></i>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <i class="fa-solid fa-angle-right invert rightangle"></i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn ">Sign up</button>
+                    <button class="loginbtn ">Log in</button>
+                </div>
+            </div>
+            <div class="Spotifyplaylist">
+                <h2 class="invert">Spotify Playlists</h2>
+                <div class="cardcontainer">
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img class="image" src="https://i.scdn.co/image/ab67706f00000002d6710ea346fec48e89d77dba"
+                                alt="" width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img class="image" src="https://i.scdn.co/image/ab67706f00000002b43eac9f01f8b865662b5c29"
+                                alt="" width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">Chillout Lounge</h3>
+                            <p class="text2">Just lean back and enjoy relaxed beats.</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002472120b92edea982b5feb264" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="	https://i.scdn.co/image/ab67706f000000024a83d42ca84e63abc9413b5d" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="	https://i.scdn.co/image/ab67706f000000025db1394baf8862336f19ac83" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img class="image" src="https://i.scdn.co/image/ab67706f000000020c894364f6c3c16aa8c6c3c3"
+                                alt="" width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="	https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">lofi beats</h3>
+                            <p class="text2">chill beats, lofi vibes, new tracks every week...</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f0000000291b4de873c02ce48d2cf31dc" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">Chillout Lounge</h3>
+                            <p class="text2">Just lean back and enjoy relaxed beats.</p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="card.html">
+                            <div class="playbtn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000020408713c731caaf1f800615a" alt=""
+                                width="150px" height="150px">
+                            <h3 class="invert">All Out 90's</h3>
+                            <p class="text2">The biggest songs of the 1980s. Cover: Bruce Springsteen</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="navinfo">
+                    <div class="navInfo">
+                        <div class="navinfo1 ">
+                            <h3 class="invert">Company</h3>
+                            <p class="text3">About</p>
+                            <p class="text3">Jobs</p>
+                            <p class="text3">For the Record</p>
+                        </div>
+                        <div class="navinfo2">
+                            <h3 class="invert">Communities</h3>
+                            <p class="text3">For Artists</p>
+                            <p class="text3">Developers</p>
+                            <p class="text3">Advertising</p>
+                            <p class="text3">Investors</p>
+                            <p class="text3">Vendors</p>
+                        </div>
+                        <div class="navinfo3 ">
+                            <h3 class="invert">Useful links</h3>
+                            <p class="text3">Support</p>
+                            <p class="text3">Free Mobile App</p>
+                        </div>
+                        <div class="navinfo4 ">
+                            <h3 class="invert">Spotify Plans</h3>
+                            <p class="text3">Premium Individual</p>
+                            <p class="text3">Premium Duo</p>
+                            <p class="text3">Premium Family</p>
+                            <p class="text3">Premium Student</p>
+                            <p class="text3">Spotify Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="underline"></div>
+                <div class="spotify">2024 Spotify AB</div>
+            </div>
+        </div>
+    </div>
+    <div class="last ">
+        <div class="last1">
+            <div class="invert">Preview of Spotify</div>
+            <div class="invert">Sign up to get unlimited songs and podcasts with occasional ads.No credit cards needed.
+            </div>
+        </div>
+        <div class="signupfree">
+            <button class="loginbtn">Sign up free</button>
+        </div>
+    </div>
+</body>
+
+</html>
